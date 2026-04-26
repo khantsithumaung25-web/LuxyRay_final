@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | LuxyRay</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="page-shell header-row">
+      <a class="logo" href="index.html">Luxy<span>Ray</span></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-nav-toggle>Menu</button>
+      <nav class="site-nav" data-site-nav>
+        <a href="index.html">Home</a>
+        <a href="treatment.html">Treatment</a>
+        <a href="doctor.html">Doctor</a>
+        <a href="promotion.html">Promotion</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="book.html" class="book-btn">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <div class="page-intro compact">
+        <span class="eyebrow">Common questions</span>
+        <h1>Answers that open cleanly and read clearly</h1>
+        <p>
+          The FAQ now gives visitors a quick overview of the main topics before they open the full
+          answers, which makes the page feel less ambiguous.
+        </p>
+      </div>
+
+      <aside class="page-side-card">
+        <span class="card-kicker">Fast answers</span>
+        <h3>Most questions fall into three areas</h3>
+        <ul class="detail-list">
+          <li>Whether a treatment is safe or suitable</li>
+          <li>How to choose the right service</li>
+          <li>How pricing and booking requests work</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section faq-topic-grid">
+      <article class="faq-topic-card">
+        <strong>Safety</strong>
+        <p>Clarifies how the clinic introduces treatments and why consultation comes first.</p>
+      </article>
+      <article class="faq-topic-card">
+        <strong>Choosing a treatment</strong>
+        <p>Explains how to move from a concern or goal to the right specialist and service.</p>
+      </article>
+      <article class="faq-topic-card">
+        <strong>Pricing and booking</strong>
+        <p>Shows why quotes depend on scope and why the booking form is the fastest path.</p>
+      </article>
+    </section>
+
+    <section class="section faq-list">
+      <article class="faq-item is-open">
+        <button class="faq-question" type="button" aria-expanded="true">
+          <span>Is PRP therapy safe?</span>
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. PRP uses components from your own blood and is usually discussed during consultation to confirm suitability and expectations.</p>
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span>How do I know which treatment is right for me?</span>
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Start with a consultation request. The clinic can review your goals, skin concerns, and downtime preferences before recommending a plan.</p>
+        </div>
+      </article>
+
+      <article class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span>Can I ask about pricing before booking?</span>
+          <span>+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. Pricing depends on the service and treatment scope. Use the booking form or assistant chat to request more specific guidance.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer page-shell">
+    <div class="footer-card">
+      <div>
+        <strong>LuxyRay Aesthetic Clinic</strong>
+        <p>Simple answers, cleaner interaction, and less uncertainty before booking.</p>
+      </div>
+      <div class="footer-links">
+        <a href="treatment.html">Treatments</a>
+        <a href="book.html">Booking</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="assistant" data-assistant>
+    <button class="assistant-toggle" type="button" aria-label="Open assistant" aria-expanded="false" data-assistant-toggle>Chat</button>
+    <div class="assistant-panel">
+      <div class="assistant-header">
+        <strong>LuxyRay Assistant</strong>
+        <button type="button" class="secondary-link" data-assistant-close>Close</button>
+      </div>
+      <div class="assistant-body" data-assistant-body>
+        <div class="assistant-message bot">
+          <strong>LuxyRay Assistant</strong>
+          <span>Ask a treatment or booking question if you do not find it in the FAQ.</span>
+        </div>
+      </div>
+      <div class="ai-input">
+        <input type="text" placeholder="Ask something..." data-assistant-input>
+        <button type="button" class="button" data-assistant-send>Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

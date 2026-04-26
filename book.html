@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Now | LuxyRay</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="page-shell header-row">
+      <a class="logo" href="index.html">Luxy<span>Ray</span></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-nav-toggle>Menu</button>
+      <nav class="site-nav" data-site-nav>
+        <a href="index.html">Home</a>
+        <a href="treatment.html">Treatment</a>
+        <a href="doctor.html">Doctor</a>
+        <a href="promotion.html">Promotion</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+        <a href="book.html" class="book-btn">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <section class="page-hero">
+      <div class="page-intro compact">
+        <span class="eyebrow">Appointment request</span>
+        <h1>Book a consultation in one clean flow</h1>
+        <p>
+          The booking page now uses visible field labels, a clearer treatment selector, and support
+          copy that explains what information helps the clinic respond well.
+        </p>
+      </div>
+
+      <aside class="page-side-card">
+        <span class="card-kicker">Prepare this first</span>
+        <h3>The request is clearer when you include</h3>
+        <ul class="detail-list">
+          <li>Your treatment interest or main concern</li>
+          <li>Your preferred date and any timing constraints</li>
+          <li>Whether you want a consultation before deciding</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section booking-layout">
+      <article class="booking-card">
+        <span class="card-kicker">Consultation request</span>
+        <h3>Request your appointment</h3>
+        <p class="muted-note">Share your preferred date and treatment interest. The clinic team will follow up to confirm availability.</p>
+        <form data-booking-form>
+          <div class="form-grid">
+            <div class="field-group">
+              <label class="field-label" for="full-name">Full name</label>
+              <input class="input-field" id="full-name" type="text" name="fullName" placeholder="Your full name" required>
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="email-address">Email address</label>
+              <input class="input-field" id="email-address" type="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="phone-number">Phone number</label>
+              <input class="input-field" id="phone-number" type="tel" name="phone" placeholder="Preferred contact number" required>
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="preferred-date">Preferred date</label>
+              <input class="input-field" id="preferred-date" type="date" name="date" required>
+            </div>
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="treatment-interest">Treatment of interest</label>
+            <select class="input-field" id="treatment-interest" name="treatment">
+              <option value="">Select a treatment path</option>
+              <option value="PRP Therapy">PRP Therapy</option>
+              <option value="Laser Treatment">Laser Treatment</option>
+              <option value="Anti-Aging Program">Anti-Aging Program</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label class="field-label" for="notes">Goals or notes</label>
+            <textarea id="notes" name="notes" placeholder="Tell us about your goals, concerns, preferred time, or whether you want a consultation first."></textarea>
+          </div>
+          <button class="button" type="submit">Submit Request</button>
+          <div class="status-message" data-form-status role="status" aria-live="polite"></div>
+        </form>
+      </article>
+
+      <aside class="info-card">
+        <span class="card-kicker">Before you submit</span>
+        <h3>Make the request easier to review</h3>
+        <p>Include the treatment you are considering, any timing constraints, and whether you want a consultation first. That makes the response more accurate.</p>
+        <ul class="detail-list">
+          <li>Use the treatment selector if you already know the category</li>
+          <li>Choose "Not sure yet" if you want guidance before deciding</li>
+          <li>Add goals or concerns so the clinic can route you correctly</li>
+        </ul>
+        <p class="muted-note">If you are not sure which service fits your goals, use the assistant or review the Treatment page before booking.</p>
+        <div class="hero-actions">
+          <a href="treatment.html" class="secondary-link">View Treatments</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer page-shell">
+    <div class="footer-card">
+      <div>
+        <strong>LuxyRay Aesthetic Clinic</strong>
+        <p>Booking is now more usable, clearer, and easier to complete correctly.</p>
+      </div>
+      <div class="footer-links">
+        <a href="treatment.html">Treatments</a>
+        <a href="doctor.html">Doctors</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="assistant" data-assistant>
+    <button class="assistant-toggle" type="button" aria-label="Open assistant" aria-expanded="false" data-assistant-toggle>Chat</button>
+    <div class="assistant-panel">
+      <div class="assistant-header">
+        <strong>LuxyRay Assistant</strong>
+        <button type="button" class="secondary-link" data-assistant-close>Close</button>
+      </div>
+      <div class="assistant-body" data-assistant-body>
+        <div class="assistant-message bot">
+          <strong>LuxyRay Assistant</strong>
+          <span>I can help with appointments, treatments, and what to include in your request.</span>
+        </div>
+      </div>
+      <div class="ai-input">
+        <input type="text" placeholder="Ask something..." data-assistant-input>
+        <button type="button" class="button" data-assistant-send>Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

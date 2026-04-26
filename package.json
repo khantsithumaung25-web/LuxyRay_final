@@ -1,0 +1,7 @@
+{
+  "name": "clinic-dynamic-qa-platform",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  }
+}
